@@ -20,7 +20,7 @@ from mongoengine import *
 from dateutil.parser import *
 import uuid
 
-from models.Resource import Resource
+from api.models.Resource import Resource
 
 
 class ResourcesApi(Restful_Resource):

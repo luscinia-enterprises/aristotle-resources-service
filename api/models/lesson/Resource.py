@@ -17,7 +17,7 @@
 
 from mongoengine import *
 
-from models.general import LearningStyle
+from api.models.general import LearningStyle
 
 
 class Resource(Document):
