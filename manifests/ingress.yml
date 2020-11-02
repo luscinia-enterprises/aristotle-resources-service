@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "aristotleeducationplatform-3f04"
+    labels:
+        app: "aristotleeducationplatform-3f04"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: aristotle-resources-service-staging-aristotleeducationplatform-3f04.1c471d97eada4acd9619.canadacentral.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "aristotleeducationplatform-3f04"
+                servicePort: 5000
