@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "aristotleeducationplatform-3f04"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "aristotleeducationplatform-3f04"
+  template:
+    metadata:
+      labels:
+        app: "aristotleeducationplatform-3f04"
+    spec:
+      containers:
+        - name: "aristotleeducationplatform-3f04"
+          image: "aristotleplatform.azurecr.io/aristotleeducationplatform"
+          ports:
+          - containerPort: 5000
