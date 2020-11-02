@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: "aristotleeducationplatform-3f04"
+    labels:
+        app: "aristotleeducationplatform-3f04"
+spec:
+    type: ClusterIP
+    ports:
+    - port: 5000
+      targetPort: 5000
+      protocol: TCP
+      name: http
+    selector:
+        app: "aristotleeducationplatform-3f04"
